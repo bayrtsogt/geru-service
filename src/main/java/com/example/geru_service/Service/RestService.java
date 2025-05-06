@@ -163,6 +163,7 @@ public class RestService {
             order.setCount(item.getCount());
             order.setInvoiceId(invoiceId);
             order.setIsPaid(0L);
+            order.setStatus(1L);
             orderDAO.save(order);
         });
 
